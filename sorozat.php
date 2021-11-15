@@ -7,8 +7,14 @@
     $kiiras="";
     if(isset($_GET["kuld"]))
     {
-       
-        
+        $ae = $_GET["a"];
+        $d = $_GET["b"];
+        $kiiras.="$ae ";
+        for($i=0; $i <= $_GET["c"]-2 ;$i++)
+        {
+            $ae = $ae + $d;
+            $kiiras.="$ae ";
+        }
     }
     
 ?>
